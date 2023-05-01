@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            overflow: hidden;
+            display: flex;
+            width: 100vw;
+            height: max-content;
+            background : url(background.avif),rgba(103, 5, 0, 0.73);;
+            background-blend-mode: multiply;
+            flex-direction: column;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .sectionname {
+            color: whitesmoke;
+            margin: 20px 0px 0px 30px;
+            height: 50px;
+            width: 100vw;
+        }
+
+        .skills {
+            width: 80vw;
+            display: flex;
+            flex-wrap: wrap;
+            height: 80vh;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .items {
+            padding-top: 40px;
+            height: 50px;
+            width: 100px;
+            border-radius: 200px;
+            background-color: rgb(20, 16, 16);
+            border: 0.1px solid white;
+            text-align: center;
+            margin: 0px 100px 0px 100px;
+            color: rgba(48, 193, 219, 0.984);
+            font: bolder;
+        }
+
+        .courses {
+            display: flex;
+            justify-content: space-around;
+            width: 81vw;
+            margin-bottom : 20px;
+        }
+
+
+
+        @media screen and (max-width : 480px) {
+            .container {
+                overflow: hidden;
+                display: flex;
+                width: 100vw;
+                height: max-content;
+                background-color: rgba(14, 10, 10, 0.801);
+                flex-direction: column;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .sectionname {
+                color: whitesmoke;
+                margin: 30px 0px 0px 20px;
+                height: 50px;
+                width: 100vw;
+            }
+
+            .skills {
+                width: 80vw;
+                display: flex;
+                flex-wrap: wrap;
+                height: 80vh;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .items {
+                padding-top: 20px;
+                height: 40px;
+                width: 70px;
+                border-radius: 200px;
+                background-color: rgb(20, 16, 16);
+                border: 0.1px solid white;
+                text-align: center;
+                margin: 0px 20px 0px 20px;
+                color: rgba(48, 193, 219, 0.984);
+                font: bolder;
+            }
+
+            .courses {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                height: 20vh;
+                margin-bottom : 20px;
+            }
+
+            .courses-items {
+                padding-top: 20px;
+                height: 50px;
+                width: 80px;
+                border-radius: 200px;
+                background-color: rgb(20, 16, 16);
+                border: 0.1px solid white;
+                text-align: center;
+                margin-right: 10px;
+                color: rgba(48, 193, 219, 0.984);
+                font: bolder;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sectionname">
+            <h1>Skills</h1>
+        </div>
+        <div class="skills">
+            <div class="items">&lt;html&gt;</div>
+            <div class="items">{CSS}</div>
+            <div class="items">(JS);</div>
+            <div class="items">&lt;?PHP?&gt;</div>
+            <div class="items">{C}</div>
+            <div class="items">{C++}</div>
+            <div class="items">PYTHON</div>
+            <div class="items">SQL</div>
+            <div class="items">DSA</div>
+        </div>
+        <div class="sectionname">
+            <h1>Courses</h1>
+        </div>
+        <div class="courses">
+            <div class="items courses-items">OS</div>
+            <div class="items courses-items">DBMS</div>
+            <div class="items courses-items">OOPs</div>
+        </div>
+    </div>
+</body>
+
+</html>

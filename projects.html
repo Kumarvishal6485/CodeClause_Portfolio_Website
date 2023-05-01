@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(14, 10, 10, 0.877);
+            display: flex;
+            background-attachment: fixed;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .items {
+            border-radius: 20px;
+            margin-bottom: 10px;
+            width: 400px;
+            height: 300px;
+            margin-right: 40px;
+            border: 2px solid white;
+            color: whitesmoke;
+            text-align: justify;
+        }
+
+        h2 {
+            text-decoration: underline;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+        }
+
+        .project-images {
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .images {
+            margin: 15px;
+        }
+
+        .prj-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 800px;
+            background: black;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        legend {
+            color: white;
+            font-size: 40px;
+        }
+
+        fieldset {
+            background-color: black;
+        }
+
+        h1 {
+            height: 40px;
+            width: 100vw;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width : 480px) {
+            .container {
+                height: max-content;
+                width: 100vw;
+                background-color: rgba(14, 10, 10, 0.696);
+                display: flex;
+                background-attachment: fixed;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .items {
+                background-color: rgb(62, 48, 48);
+                border-radius: 20px;
+                margin-bottom: 20px;
+                width: 300px;
+                height: 380px;
+                margin-top: 20px;
+                margin-right: 40px;
+                border: 2px solid white;
+                color: whitesmoke;
+                text-align: justify;
+                padding-bottom: 10px;
+            }
+
+            h2 {
+                text-decoration: underline;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+            }
+
+            p {
+                margin-left: 12px;
+                margin-right: 12px;
+            }
+
+            img {
+                height: 200px;
+                width: 300px;
+            }
+
+            .project-images {
+                height: max-content;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .images {
+                margin: 15px;
+            }
+
+            .prj-img {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 350px;
+                background: black;
+            }
+
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            legend {
+                color: white;
+                font-size: 30px;
+            }
+
+            fieldset {
+                background-color: black;
+            }
+
+            h1 {
+                margin-top : 10px;
+                margin-bottom : 10px;
+                height: 40px;
+                width: 100vw;
+                color: whitesmoke;
+                text-align: center;
+                font-size: 40px;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1><i>My Projects</i></h1>
+            <div class="items">
+                <h2>Raag - music website</h2>
+                <p>The dynamic website RAAG . That's developed using Html , Css ,Javascript , Bootstrap , Php , Sql ,
+                    XAMPP server . <br>
+                    The website provides the multiple user friendly option or features where the user can listen song ,
+                    upload any of his song , create playlists as many as he/she want , play the songs , can add the
+                    songs to
+                    favourites etc. <br>
+                    Every playlist from the playlist list is uniquely identifiable so as to don't mixup the content of
+                    the
+                    one playlist with other of the same user . <br>
+                    The screenshots of the projects as an example are given in this page .
+                </p>
+            </div>
+            <div class="items">
+                <h2>My Portfolio Website</h2>
+                <p>The fully Responsive Portfolio website that is developed using Html , Css , Javascript. <br>
+                    This is associated with the Task alloted with the CodeClause , as an web developer intern ,
+                    developed
+                    this that include my details like who i am , what i do , my educational qualifications , my skills ,
+                    my
+                    projects etc. (These all details are not compulsorily required to be displayed , but are of
+                    concerned
+                    about what i want to showcase as my requirement in my portfolio). <br>
+                    The screenshots of the projects as an example are given in this page .
+                </p>
+            </div>
+        </div>
+        <div class="container project-images">
+            <fieldset>
+                <legend>Raag images</legend>
+                <div class="prj-img">
+                    <div class="images"><img src="raag9.jpg"></div>
+                    <div class="images"><img src="raag7.jpg"></div>
+                    <div class="images"><img src="raag4.jpg"></div>
+                    <div class="images"><img src="raag5.jpg"></div>
+                    <div class="images"><img src="raag1.jpg"></div>
+                    <div class="images"><img src="raag2.jpg"></div>
+                    <div class="images"><img src="raag3.jpg"></div>
+                    <div class="images"><img src="raag6.jpg"></div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Portfolio images</legend>
+                <div class="prj-img">
+                    <div class="images"><img src="portfolio1.jpeg"></div>
+                    <div class="images"><img src="portfolio2.jpeg"></div>
+                    <div class="images"><img src="portfolio3.jpeg"></div>
+                    <div class="images"><img src="portfolio4.jpeg"></div>
+                    <div class="images"><img src="portfolio5.jpeg"></div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

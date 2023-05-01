@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            scroll-behavior: smooth;
+            transition-property: scroll-behavior;
+            transition-duration: 5s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .leftnav {
+            background-color: black;
+            color: whitesmoke;
+            height: 100vh;
+            width: 20vw;
+        }
+
+        .options {
+            position: relative;
+            top: 100px;
+            left: 60px;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 80px;
+        }
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .details {
+            display: flex;
+            transform: translateY(33vh);
+            margin-left: 100px;
+            height: 250px;
+            color: whitesmoke;
+            width: fit-content;
+        }
+
+        .text {
+            width: 450px;
+            height: 100px;
+        }
+
+        .image {
+            height: 350px;
+        }
+
+        img {
+            border-radius: 400px;
+            height: 250px;
+            width: 250px;
+        }
+
+        .introduction {
+            display: flex;
+            width: 80vw;
+            background: url(background1.avif), rgba(32, 30, 30, 0.824);
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #about {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(37, 35, 35, 0.824);
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(background.avif), rgba(32, 30, 30, 0.824);
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .about-text {
+            backdrop-filter: 500px;
+            background-color: rgba(0, 0, 0, 0.15);
+            width: 50vw;
+            height: 50vh;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        .connect-image{
+            height : 40px;
+            width: 40px;
+        }
+
+        .connect-item{
+            display : inline;
+        }
+        
+
+        p {
+            line-height: 20px;
+        }
+
+        @media screen and (max-width : 480px) {
+            .container {
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+                flex-direction: column;
+            }
+
+            .leftnav {
+                height: 50px;
+                width: 100vw;
+            }
+
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .options {
+                position: relative;
+                top: 8px;
+                width: 70vw;
+            }
+
+            .introduction {
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+                background: url(background1.avif), rgba(32, 30, 30, 0.824);
+                background-blend-mode: multiply;
+                background-size: cover;
+                background-repeat: no-repeat;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-left: 20px;
+                height: 150px;
+                color: whitesmoke;
+                width: fit-content;
+                justify-content: center;
+                transform: translateY(-100%);
+            }
+
+            .text {
+                width: 300px;
+                height: 150px;
+            }
+
+            .image {
+                height: 150px;
+            }
+
+            img {
+                margin-left: 37px;
+                border-radius: 400px;
+                height: 150px;
+                width: 150px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            #about {
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(37, 35, 35, 0.824);
+                color: whitesmoke;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url(background.avif), rgba(32, 30, 30, 0.824);
+                background-blend-mode: multiply;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .about-text {
+                backdrop-filter: 500px;
+                background-color: rgba(0, 0, 0, 0.15);
+                width: 80vw;
+                height: 50vh;
+                text-align: justify;
+                padding: 20px;
+            }
+
+            p {
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftnav">
+            <ul class="options">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a>
+                <li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+        <div class="introduction">
+            
+            <div class="details">
+                <div class="text">
+                    <br><br><br>
+                    <h1>Hey There , I'm Vishal Kumar</h1>
+                    <br>
+                    <h3>I am a Full Stack Web Developer based in Delhi . <br> Web Developer Intern at CodeClause.</h3>
+                </div>
+                <div class="image">
+                    <img src="profile.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-text">
+            <p>I am a Full Stack Web Developer , i am pursuing my graduation in the field of Computer Application.
+                I have worked as a Software Engineer Trainee . I am passionate towards developing websites that solves
+                the day to day life problems and solving the problems with efficient approach.
+                <br>
+                I love to solve problems on different coding platforms like leetcode , codestudio , geeks for geeks ,
+                hackerrank etc . I am learning Data Structures and Algorithms that helps me to optimise my code and
+                provides a way to solve problems in efficient way .
+                <br>
+                I am intereste in research field also , i have contributed in research paper writing also .
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
